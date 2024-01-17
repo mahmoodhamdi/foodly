@@ -16,8 +16,8 @@ const kDark = Color(0xff000000);
 const kRed = Color(0xffe81e4d);
 const kOffWhite = Color(0xffF3F4F8);
 
-double hieght = 825.h;
-double width = 375.w;
+double kHieght = 825.h;
+double kWidth = 375.w;
 
 
 const String appBaseUrl = "http://localhost:6003";

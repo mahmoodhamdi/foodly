@@ -2,8 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:foodly/core/constants/constants.dart';
 import 'package:foodly/core/utils/app_router.dart';
+import 'package:foodly/core/utils/service_locaror.dart';
 
-void main() => runApp(const MyApp());
+void main() {
+  runApp(const MyApp());
+  setupServiceLocator();
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
