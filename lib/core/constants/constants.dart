@@ -1,6 +1,6 @@
-import 'dart:ui';
-
+import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+ 
 String googleApiKey = '';
 
 const kPrimary = Color(0xFF30b9b2);
@@ -19,6 +19,4 @@ const kOffWhite = Color(0xffF3F4F8);
 double kHieght = 825.h;
 double kWidth = 375.w;
 
-
 const String appBaseUrl = "http://localhost:6003";
-
