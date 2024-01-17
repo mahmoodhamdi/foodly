@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../lib/core/constants/constants.dart';
+import '../lib/core/utils/constants/constants.dart';
 import 'shimmer_widget.dart';
   
 class NearbyShimmer extends StatelessWidget {

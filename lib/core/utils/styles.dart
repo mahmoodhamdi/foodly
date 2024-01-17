@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodly/core/utils/constants/constants.dart';
 
 ThemeData lightThemeData = ThemeData(
     brightness: Brightness.light,
@@ -26,10 +27,23 @@ TextStyle getTextStyle(
   }
 }
 
-class DarkTextStyles {
-   
-}
+class DarkTextStyles {}
+
 class LightTextStyles {
+  static const TextStyle kSceondary13w600 = TextStyle(
+    color: kSecondary,
+    fontSize: 13,
+    fontWeight: FontWeight.w600,
+  );
+  static const TextStyle kGreyLight11w400 = TextStyle(
+    color: kGrayLight,
+    fontSize: 11,
+    fontWeight: FontWeight.w400,
+  );
+  static const TextStyle textStyle35 = TextStyle(
+    fontSize: 35,
+  );
+  
 }
 
 Color getDividerColor(BuildContext context) {
@@ -37,4 +51,3 @@ Color getDividerColor(BuildContext context) {
       ? const Color(0x59BBC4CE)
       : const Color(0x597B80AD);
 }
- 

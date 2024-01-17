@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
-import 'package:foodly/core/constants/constants.dart';
+import 'package:foodly/core/utils/constants/constants.dart';
 import 'package:foodly/features/cart/presentation/views/cart_view.dart';
 import 'package:foodly/features/home/presentation/manager/navigation_bar_cubit/navigation_bar_cubit.dart';
 import 'package:foodly/features/products/presentation/views/products_view.dart';
 import 'package:foodly/features/profile/presentation/views/profile_view.dart';
 import 'package:foodly/features/search/presentation/views/search_view.dart';
-
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
 final List<Widget> kPages =const [

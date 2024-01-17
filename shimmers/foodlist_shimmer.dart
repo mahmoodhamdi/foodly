@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'package:foodly/core/constants/constants.dart';
+import 'package:foodly/core/utils/constants/constants.dart';
 import 'shimmer_widget.dart';
   
 class FoodsListShimmer extends StatelessWidget {
