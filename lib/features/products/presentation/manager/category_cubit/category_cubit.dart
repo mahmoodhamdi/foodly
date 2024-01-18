@@ -5,8 +5,10 @@ part 'category_state.dart';
 
 class CategoryCubit extends Cubit<CategoryState> {
   CategoryCubit() : super(CategoryInitial());
-  int index = 0;
+  int index = -1;
   void changeCategoryIndex(int value) {
+    if (index == value) return;
+
     index = value;
     emit(CategoryIndexChanged());
   }

@@ -1,9 +1,19 @@
+import 'package:flutter/material.dart';
+import 'package:foodly/features/cart/presentation/views/cart_view.dart';
 import 'package:foodly/features/home/presentation/views/home_view.dart';
+import 'package:foodly/features/products/presentation/views/all_categoris_view.dart';
+import 'package:foodly/features/products/presentation/views/products_view.dart';
+import 'package:foodly/features/profile/presentation/views/profile_view.dart';
+import 'package:foodly/features/search/presentation/views/search_view.dart';
 import 'package:go_router/go_router.dart';
 
 abstract class AppRouter {
   static const kHomeView = '/homeView';
-  static const kAyatView = '/ayatView';
+  static const kAllCategoriesView = '/allCategoriesView';
+  static const kProductsView = '/productsView';
+  static const kCartView = '/cartView';
+  static const kProfileView = '/profileView';
+  static const kSearchView = '/searchView';
 
   static final router = GoRouter(routes: [
     GoRoute(
@@ -12,9 +22,30 @@ abstract class AppRouter {
         return const HomeView();
       },
     ),
-    // GoRoute(
-    //   path: kHomeView,
-    //   builder: (context, state) => const (),
-    // ),
+    GoRoute(
+      path: kProductsView,
+      builder: (context, state) => const ProductsView(),
+    ),
+    GoRoute(
+      path: kCartView,
+      builder: (context, state) => const CartView(),
+    ),
+    GoRoute(
+      path: kProfileView,
+      builder: (context, state) => const ProfileView(),
+    ),
+    GoRoute(
+      path: kSearchView,
+      builder: (context, state) => const SearchView(),
+    ),
+    GoRoute(
+      path: '/fade',
+      pageBuilder: (context, state) => CustomTransitionPage<void>(
+        key: state.pageKey,
+        child: const AllCategorisView(),
+        transitionsBuilder: (context, animation, secondaryAnimation, child) =>
+            FadeTransition(opacity: animation, child: child),
+      ),
+    ),
   ]);
 }
