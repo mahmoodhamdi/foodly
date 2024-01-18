@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
  import 'package:shimmer/shimmer.dart';
 
-import '../lib/core/utils/constants/constants.dart';
+import '../utils/constants/constants.dart';
 
 class ShimmerWidget extends StatelessWidget {
   const ShimmerWidget({super.key, required this.shimmerWidth, required this.shimmerHieght, required this.shimmerRadius});

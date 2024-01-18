@@ -40,10 +40,14 @@ class LightTextStyles {
     fontSize: 11,
     fontWeight: FontWeight.w400,
   );
+  static const TextStyle kDark12w400 = TextStyle(
+    color: kDark,
+    fontSize: 12,
+    fontWeight: FontWeight.w400,
+  );
   static const TextStyle textStyle35 = TextStyle(
     fontSize: 35,
   );
-  
 }
 
 Color getDividerColor(BuildContext context) {
