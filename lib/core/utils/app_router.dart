@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:foodly/features/cart/presentation/views/cart_view.dart';
 import 'package:foodly/features/home/presentation/views/home_view.dart';
 import 'package:foodly/features/products/presentation/views/all_categoris_view.dart';
@@ -39,13 +38,8 @@ abstract class AppRouter {
       builder: (context, state) => const SearchView(),
     ),
     GoRoute(
-      path: '/fade',
-      pageBuilder: (context, state) => CustomTransitionPage<void>(
-        key: state.pageKey,
-        child: const AllCategorisView(),
-        transitionsBuilder: (context, animation, secondaryAnimation, child) =>
-            FadeTransition(opacity: animation, child: child),
-      ),
+      path: kAllCategoriesView,
+      builder: (context, state) => const AllCategorisView(),
     ),
   ]);
 }
