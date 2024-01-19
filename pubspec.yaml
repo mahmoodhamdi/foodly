@@ -87,5 +87,5 @@ flutter_assets:
   assets_path: assets/icons/
   output_path: lib/core/widgets/
   filename: assets.dart
-  field_prefix:
-  field_name:
+  field_prefix: null
+  field_name: null

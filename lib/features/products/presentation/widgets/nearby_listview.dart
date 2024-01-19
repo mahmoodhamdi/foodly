@@ -10,7 +10,7 @@ class NearbyListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 210.h,
+      height: 190.h,
       width: kWidth,
       padding: EdgeInsets.only(left: 12.w, top: 10.h),
       child: ListView.builder(

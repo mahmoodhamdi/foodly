@@ -60,6 +60,16 @@ class LightTextStyles {
     fontSize: 12,
     fontWeight: FontWeight.w400,
   );
+  static const TextStyle kDark12w500 = TextStyle(
+    color: kDark,
+    fontSize: 12,
+    fontWeight: FontWeight.w500,
+  );
+  static const TextStyle kGray9w500 = TextStyle(
+    color: kGray,
+    fontSize: 9,
+    fontWeight: FontWeight.w500,
+  );
   static const TextStyle kDark16Bold = TextStyle(
     color: kDark,
     fontSize: 16,

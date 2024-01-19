@@ -6,7 +6,7 @@ class RestaurantModel {
   final String owner;
   final String code;
   final String logoUrl;
-  final int rating;
+  final double rating;
   final String ratingCount;
   final Map<String, dynamic> coords;
   RestaurantModel({
@@ -31,7 +31,7 @@ class RestaurantModel {
       owner: json['owner'],
       code: json['code'],
       logoUrl: json['logoUrl'],
-      rating: json['rating'],
+      rating: json['rating'].toDouble(),
       ratingCount: json['ratingCount'],
       coords: json['coords'],
     );
