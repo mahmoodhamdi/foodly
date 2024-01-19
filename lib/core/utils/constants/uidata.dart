@@ -1,4 +1,8 @@
+import 'package:foodly/features/cart/data/models/cart_model.dart';
 import 'package:foodly/features/products/data/models/category_model.dart';
+import 'package:foodly/features/products/data/models/foods_model.dart';
+import 'package:foodly/features/products/data/models/restaurants_model.dart';
+import 'package:foodly/features/profile/data/models/profile_model.dart';
 
 List<CategoryModel> categoriesModelList = [
   CategoryModel(
@@ -165,6 +169,10 @@ const restaurants = [
     }
   }
 ];
+
+List<RestaurantModel> restaurantModels = restaurants.map((restaurant) {
+  return RestaurantModel.fromJson(restaurant);
+}).toList();
 
 List <Map<String, dynamic>> foods = [
   {
@@ -334,7 +342,9 @@ List <Map<String, dynamic>> foods = [
     "time": "45 min"
   }
 ];
-
+List<FoodModel> foodModels = foods.map((food) {
+  return FoodModel.fromJson(food);
+}).toList();
 const cart = [
   {
     "_id": "653b6588541d2aa2c1e89cd1",
@@ -358,6 +368,10 @@ const cart = [
   }
 ];
 
+List<CartModel> cartModels = cart.map((cartItem) {
+  return CartModel.fromJson(cartItem);
+}).toList();
+
 const profile = {
   "_id": "6537a4448cd1bd140ebddcee",
   "username": "Dbestech",
@@ -370,6 +384,8 @@ const profile = {
   "updatedAt": "2023-10-24T11:02:28.215Z"
 };
 
+
+ProfileModel profileModel = ProfileModel.fromJson(profile);
 const choicesList = [
   {
     "id": 1,

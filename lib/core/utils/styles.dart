@@ -35,6 +35,11 @@ class LightTextStyles {
     fontSize: 13,
     fontWeight: FontWeight.w600,
   );
+  static const TextStyle kGrey13w600 = TextStyle(
+    color: kGray,
+    fontSize: 13,
+    fontWeight: FontWeight.w600,
+  );
   static const TextStyle kGrey12w600 = TextStyle(
     color: kGray,
     fontSize: 12,
@@ -54,6 +59,11 @@ class LightTextStyles {
     color: kDark,
     fontSize: 12,
     fontWeight: FontWeight.w400,
+  );
+  static const TextStyle kDark16Bold = TextStyle(
+    color: kDark,
+    fontSize: 16,
+    fontWeight: FontWeight.bold,
   );
   static const TextStyle textStyle35 = TextStyle(
     fontSize: 35,

@@ -1,7 +1,10 @@
 import 'package:foodly/features/cart/presentation/views/cart_view.dart';
 import 'package:foodly/features/home/presentation/views/home_view.dart';
+import 'package:foodly/features/products/data/models/category_model.dart';
 import 'package:foodly/features/products/presentation/views/all_categoris_view.dart';
+import 'package:foodly/features/products/presentation/views/category_view.dart';
 import 'package:foodly/features/products/presentation/views/products_view.dart';
+import 'package:foodly/features/products/presentation/views/recommendation_view.dart';
 import 'package:foodly/features/profile/presentation/views/profile_view.dart';
 import 'package:foodly/features/search/presentation/views/search_view.dart';
 import 'package:go_router/go_router.dart';
@@ -13,7 +16,8 @@ abstract class AppRouter {
   static const kCartView = '/cartView';
   static const kProfileView = '/profileView';
   static const kSearchView = '/searchView';
-
+  static const kCategoryView = '/categoryView';
+  static const kRecommendationView = '/recommendationView';
   static final router = GoRouter(routes: [
     GoRoute(
       path: '/',
@@ -41,5 +45,17 @@ abstract class AppRouter {
       path: kAllCategoriesView,
       builder: (context, state) => const AllCategorisView(),
     ),
+    GoRoute(
+        path: kCategoryView,
+        builder: (context, state) {
+          final categoryModel = state.extra as CategoryModel;
+          return CategoryView(categoryModel: categoryModel);
+        }),
+    GoRoute(
+        path: kRecommendationView,
+        builder: (context, state) {
+          final title = state.extra as String;
+          return RecommendationView(title: title);
+        }),
   ]);
 }
