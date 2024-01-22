@@ -10,7 +10,7 @@ class FoodsListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 210.h,
+      height: 184.h,
       width: kWidth,
       padding: EdgeInsets.only(left: 12.w, top: 10.h),
       child: ListView.builder(
