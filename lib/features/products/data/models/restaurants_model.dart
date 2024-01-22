@@ -8,8 +8,10 @@ class RestaurantModel {
   final String logoUrl;
   final double rating;
   final String ratingCount;
+  final bool isOpen;
   final Map<String, dynamic> coords;
   RestaurantModel({
+    required this.isOpen,
     required this.id,
     required this.title,
     required this.time,
@@ -34,6 +36,7 @@ class RestaurantModel {
       rating: json['rating'].toDouble(),
       ratingCount: json['ratingCount'],
       coords: json['coords'],
+      isOpen: json['isOpen'],
     );
   }
 }

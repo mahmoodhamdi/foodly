@@ -15,7 +15,7 @@ class AllCategorisView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        title: const Text(
+        title: Text(
           "All Categoris",
           style: LightTextStyles.kGrey12w600,
         ),

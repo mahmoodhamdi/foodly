@@ -36,13 +36,13 @@ class CustomAppBar extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text(
+                        Text(
                         "Delivere to",
                         style: LightTextStyles.kSceondary13w600,
                       ),
                       SizedBox(
                         width: kWidth * 0.65,
-                        child: const Text(
+                        child:   Text(
                             "16768 21st Ave NW, Washington, DC 20036",
                             overflow: TextOverflow.ellipsis,
                             style: LightTextStyles.kGreyLight11w400),

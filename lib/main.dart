@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:foodly/core/utils/constants/constants.dart';
 import 'package:foodly/core/utils/app_router.dart';
 import 'package:foodly/core/utils/service_locaror.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +24,9 @@ class MyApp extends StatelessWidget {
           routerConfig: AppRouter.router,
           debugShowCheckedModeBanner: false,
           title: 'Foodly',
+          
           theme: ThemeData(
+          textTheme: GoogleFonts.poppinsTextTheme(),
             scaffoldBackgroundColor: kOffWhite,
             iconTheme: const IconThemeData(
               color: kDark,

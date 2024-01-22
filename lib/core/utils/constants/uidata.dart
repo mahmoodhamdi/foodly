@@ -81,6 +81,7 @@ List<CategoryModel> categoriesModelList = [
 
 const restaurants = [
   {
+    "isOpen": true,
     "_id": "6530ebbcc9e72013e5b65933",
     "title": "Lapisara Eatery",
     "time": "6:00am - 9:00pm",
@@ -103,6 +104,7 @@ const restaurants = [
     }
   },
   {
+    "isOpen": true,
     "_id": "6530ea6bc9e72013e5b6592d",
     "title": "Burger King",
     "time": "6:00am - 9:00pm",
@@ -125,6 +127,7 @@ const restaurants = [
     }
   },
   {
+    "isOpen": true,
     "_id": "6530eb66c9e72013e5b65931",
     "title": "La Foods",
     "time": "6:00am - 9:00pm",
@@ -147,8 +150,9 @@ const restaurants = [
     }
   },
   {
-    "_id": "6530eb23c9e72013e5b6592f",
-    "title": "Italian Restaurant",
+    "isOpen": true,
+    "_id": "6530ea6bc9e72013e5b6592d",
+    "title": "Burger King",
     "time": "6:00am - 9:00pm",
     "imageUrl":
         "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
@@ -156,25 +160,94 @@ const restaurants = [
     "code": "41007428",
     "logoUrl":
         "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
-    "rating": 5,
+    "rating": 3,
     "ratingCount": "3278",
     "coords": {
-      "id": "2021",
-      "latitude": 37.78557922976825,
-      "longitude": -122.40722000299483,
+      "id": "2020",
+      "latitude": 37.785925590588505,
+      "longitude": -122.41007428687641,
       "address": "333 O'Farrell St, San Francisco, CA 94102, United States",
-      "title": "Italian Restaurant",
+      "title": "Burger King",
       "latitudeDelta": 0.0122,
       "longitudeDelta": 0.0221
     }
-  }
+  },
+  {
+    "isOpen": false,
+    "_id": "6530eb66c9e72013e5b65931",
+    "title": "La Foods",
+    "time": "11:00am - 9:00pm",
+    "imageUrl":
+        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+    "owner": "fgdgdfgd",
+    "code": "41007428",
+    "logoUrl":
+        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+    "rating": 5,
+    "ratingCount": "5666",
+    "coords": {
+      "id": "2022",
+      "latitude": 37.787503258917035,
+      "longitude": -122.39854938269353,
+      "address": "333 O'Farrell St, San Francisco, CA 94102, United States",
+      "title": "La Foods",
+      "latitudeDelta": 0.0122,
+      "longitudeDelta": 0.0221
+    }
+  },
+  {
+    "isOpen": true,
+    "_id": "6530ea6bc9e72013e5b6592d",
+    "title": "Burger King",
+    "time": "6:00am - 9:00pm",
+    "imageUrl":
+        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+    "owner": "sjgdsjgfjshhjs",
+    "code": "41007428",
+    "logoUrl":
+        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+    "rating": 3,
+    "ratingCount": "3278",
+    "coords": {
+      "id": "2020",
+      "latitude": 37.785925590588505,
+      "longitude": -122.41007428687641,
+      "address": "333 O'Farrell St, San Francisco, CA 94102, United States",
+      "title": "Burger King",
+      "latitudeDelta": 0.0122,
+      "longitudeDelta": 0.0221
+    }
+  },
+  {
+    "isOpen": false,
+    "_id": "6530eb66c9e72013e5b65931",
+    "title": "La Foods",
+    "time": "6:00am - 9:00pm",
+    "imageUrl":
+        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+    "owner": "fgdgdfgd",
+    "code": "41007428",
+    "logoUrl":
+        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
+    "rating": 5,
+    "ratingCount": "5666",
+    "coords": {
+      "id": "2022",
+      "latitude": 37.787503258917035,
+      "longitude": -122.39854938269353,
+      "address": "333 O'Farrell St, San Francisco, CA 94102, United States",
+      "title": "La Foods",
+      "latitudeDelta": 0.0122,
+      "longitudeDelta": 0.0221
+    }
+  },
 ];
 
 List<RestaurantModel> restaurantModels = restaurants.map((restaurant) {
   return RestaurantModel.fromJson(restaurant);
 }).toList();
 
-List <Map<String, dynamic>> foods = [
+List<Map<String, dynamic>> foods = [
   {
     "_id": "65316968f94c6496dc84f3c1",
     "title": "Tiramisu",
@@ -195,9 +268,8 @@ List <Map<String, dynamic>> foods = [
       {"id": 4, "title": "Cocoa", "price": "0.50"},
       {"id": 5, "title": "Sugar", "price": "0.50"}
     ],
-    "imageUrl": 
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp"
-    ,
+    "imageUrl":
+        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
     "__v": 0,
     "category": "6531209dbbe4998e90af3fef",
     "time": "35 min"
@@ -222,9 +294,8 @@ List <Map<String, dynamic>> foods = [
       {"id": 4, "title": "Black Pepper", "price": "0.50"},
       {"id": 5, "title": "Pasta", "price": "3.00"}
     ],
-    "imageUrl": 
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp"
-    ,
+    "imageUrl":
+        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
     "__v": 2,
     "category": "6531209dbbe4998e90af3fef",
     "time": "20 min"
@@ -249,9 +320,8 @@ List <Map<String, dynamic>> foods = [
       {"id": 4, "title": "Cherry Tomatoes", "price": "1.00"},
       {"id": 5, "title": "Vinaigrette", "price": "0.50"}
     ],
-   "imageUrl": 
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp"
-    ,
+    "imageUrl":
+        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
     "__v": 0,
     "category": "6531209dbbe4998e90af3fef",
     "time": "55 min"
@@ -274,9 +344,8 @@ List <Map<String, dynamic>> foods = [
       {"id": 2, "title": "Pepperoni", "price": "2.50"},
       {"id": 3, "title": "Ketch up", "price": "0.50"}
     ],
-    "imageUrl": 
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp"
-    ,
+    "imageUrl":
+        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
     "__v": 0,
     "category": "6531209dbbe4998e90af3fef",
     "time": "30 min"
@@ -301,9 +370,8 @@ List <Map<String, dynamic>> foods = [
       {"id": 4, "title": "Coconut Milk", "price": "1.50"},
       {"id": 5, "title": "Ice", "price": "0.50"}
     ],
-   "imageUrl": 
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp"
-    ,
+    "imageUrl":
+        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
     "__v": 0,
     "category": "6531209dbbe4998e90af3fef",
     "time": "25 min"
@@ -334,9 +402,8 @@ List <Map<String, dynamic>> foods = [
       {"id": 4, "title": "Pork", "price": "3.50"},
       {"id": 5, "title": "Barbecue Sauce", "price": "1.00"}
     ],
-    "imageUrl": 
-      "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp"
-    ,
+    "imageUrl":
+        "https://d326fntlu7tb1e.cloudfront.net/uploads/5c2a9ca8-eb07-400b-b8a6-2acfab2a9ee2-image001.webp",
     "__v": 0,
     "category": "6531209dbbe4998e90af3fef",
     "time": "45 min"
@@ -384,7 +451,6 @@ const profile = {
   "updatedAt": "2023-10-24T11:02:28.215Z"
 };
 
-
 ProfileModel profileModel = ProfileModel.fromJson(profile);
 const choicesList = [
   {
@@ -413,5 +479,3 @@ const choicesList = [
     "value": "recommended",
   },
 ];
-
-

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:foodly/core/utils/constants/constants.dart';
 
 ThemeData lightThemeData = ThemeData(
@@ -30,58 +31,83 @@ TextStyle getTextStyle(
 class DarkTextStyles {}
 
 class LightTextStyles {
-  static const TextStyle kSceondary13w600 = TextStyle(
+  static TextStyle kSceondary13w600 = TextStyle(
     color: kSecondary,
-    fontSize: 13,
+    fontSize: 13.sp,
     fontWeight: FontWeight.w600,
   );
-  static const TextStyle kGrey13w600 = TextStyle(
+  static TextStyle kGrey13w600 = TextStyle(
     color: kGray,
-    fontSize: 13,
+    fontSize: 13.sp,
     fontWeight: FontWeight.w600,
   );
-  static const TextStyle kGrey12w600 = TextStyle(
+  static TextStyle kGrey12w600 = TextStyle(
     color: kGray,
-    fontSize: 12,
+    fontSize: 12.sp,
     fontWeight: FontWeight.w600,
   );
-  static const TextStyle kGrey12w400 = TextStyle(
+  static TextStyle kGrey12w400 = TextStyle(
     color: kGray,
-    fontSize: 12,
+    fontSize: 12.sp,
     fontWeight: FontWeight.w400,
   );
-  static const TextStyle kGreyLight11w400 = TextStyle(
+  static TextStyle kGreyLight11w400 = TextStyle(
     color: kGrayLight,
-    fontSize: 11,
+    fontSize: 11.sp,
     fontWeight: FontWeight.w400,
   );
-  static const TextStyle kDark12w400 = TextStyle(
+  static TextStyle kDark12w400 = TextStyle(
     color: kDark,
-    fontSize: 12,
+    fontSize: 12.sp,
     fontWeight: FontWeight.w400,
   );
-  static const TextStyle kDark12w500 = TextStyle(
+  static TextStyle kDark11w400 = TextStyle(
     color: kDark,
-    fontSize: 12,
+    fontSize: 11.sp,
+    fontWeight: FontWeight.w400,
+  );
+  static TextStyle kGray11w400 = TextStyle(
+    color: kGray,
+    fontSize: 11.sp,
+    fontWeight: FontWeight.w400,
+  );
+  static TextStyle kDark12w500 = TextStyle(
+    color: kDark,
+    fontSize: 12.sp,
     fontWeight: FontWeight.w500,
   );
-  static const TextStyle kPrimary12w600 = TextStyle(
-    color: kPrimary,
-    fontSize: 12,
+  static TextStyle kDark12w600 = TextStyle(
+    color: kDark,
+    fontSize: 12.sp,
     fontWeight: FontWeight.w600,
   );
-  static const TextStyle kGray9w500 = TextStyle(
+  static TextStyle kLightWhite12w600 = TextStyle(
+    color: kLightWhite,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w600,
+  );
+  static TextStyle kPrimary12w600 = TextStyle(
+    color: kPrimary,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w600,
+  );
+  static TextStyle kGray9w500 = TextStyle(
     color: kGray,
-    fontSize: 9,
+    fontSize: 9.sp,
     fontWeight: FontWeight.w500,
   );
-  static const TextStyle kDark16Bold = TextStyle(
+  static TextStyle kGray9w400 = TextStyle(
+    color: kGray,
+    fontSize: 9.sp,
+    fontWeight: FontWeight.w400,
+  );
+  static TextStyle kDark16Bold = TextStyle(
     color: kDark,
-    fontSize: 16,
+    fontSize: 16.sp,
     fontWeight: FontWeight.bold,
   );
-  static const TextStyle textStyle35 = TextStyle(
-    fontSize: 35,
+  static TextStyle textStyle35 = TextStyle(
+    fontSize: 35.sp,
   );
 }
 
