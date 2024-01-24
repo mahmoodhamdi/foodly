@@ -82,7 +82,7 @@ class TrendingFoodsListTile extends StatelessWidget {
                             ),
                             SizedBox(
                               width: kWidth * 0.7,
-                              height: 18.h,
+                              height: 15.h,
                               child: ListView.builder(
                                 itemCount: foodModel.additives.length,
                                 scrollDirection: Axis.horizontal,
@@ -100,8 +100,7 @@ class TrendingFoodsListTile extends StatelessWidget {
                                         padding: const EdgeInsets.all(2.0),
                                         child: Text(
                                           foodModel.additives[index]["title"],
-                                          style:
-                                              LightTextStyles.kLightWhite12w600,
+                                          style: LightTextStyles.kGray8w400,
                                         ),
                                       ),
                                     ),
