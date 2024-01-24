@@ -21,21 +21,21 @@ class ProductsView extends StatelessWidget {
           HeadingWidget(
             title: "Nearby Restaurants",
             onTap: () => GoRouter.of(context).push(
-                AppRouter.kRecommendationView,
+                AppRouter.kNearbyRestuarants,
                 extra: "Nearby Restaurants"),
           ),
           const NearbyListView(),
           HeadingWidget(
             title: "Try Something New",
             onTap: () => GoRouter.of(context).push(
-                AppRouter.kRecommendationView,
+                AppRouter.kTrendingFoodsView,
                 extra: "Try Something New"),
           ),
           const FoodsListView(),
           HeadingWidget(
             title: "Food Closer To You",
             onTap: () => GoRouter.of(context).push(
-                AppRouter.kRecommendationView,
+                AppRouter.kNearByFoodsView,
                 extra: "Food Closer To You"),
           ),
           const FoodsListView()

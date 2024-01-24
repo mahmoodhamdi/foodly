@@ -3,8 +3,10 @@ import 'package:foodly/features/home/presentation/views/home_view.dart';
 import 'package:foodly/features/products/data/models/category_model.dart';
 import 'package:foodly/features/products/presentation/views/all_categoris_view.dart';
 import 'package:foodly/features/products/presentation/views/category_view.dart';
+import 'package:foodly/features/products/presentation/views/nearby_foods.dart';
 import 'package:foodly/features/products/presentation/views/products_view.dart';
 import 'package:foodly/features/products/presentation/views/restuarants_view.dart';
+import 'package:foodly/features/products/presentation/views/trending_foods.dart';
 import 'package:foodly/features/profile/presentation/views/profile_view.dart';
 import 'package:foodly/features/search/presentation/views/search_view.dart';
 import 'package:go_router/go_router.dart';
@@ -17,7 +19,19 @@ abstract class AppRouter {
   static const kProfileView = '/profileView';
   static const kSearchView = '/searchView';
   static const kCategoryView = '/categoryView';
-  static const kRecommendationView = '/recommendationView';
+  static const kRestuarantView = '/restuarantView';
+  static const kNearByView = '/nearByView';
+  static const kAllRestuarantsView = '/allRestuarantsView';
+  static const kAllFoodsView = '/allFoodsView';
+  static const kNearByFoodsView = '/nearByFoodsView';
+  static const kFoodsDetailView = '/foodsDetailView';
+  static const kCartDetailView = '/cartDetailView';
+  static const kRestaurantDetailView = '/restaurantDetailView';
+  static const kOrderView = '/orderView';
+  static const kTrendingFoodsView = '/trendingFoodsView';
+  static const kAddressView = '/addressView';
+  static const kOrderSuccessView = '/orderSuccessView';
+  static const kNearbyRestuarants = '/kNearbyRestuarants';
   static final router = GoRouter(routes: [
     GoRoute(
       path: '/',
@@ -52,10 +66,19 @@ abstract class AppRouter {
           return CategoryView(categoryModel: categoryModel);
         }),
     GoRoute(
-        path: kRecommendationView,
+        path: kNearbyRestuarants,
         builder: (context, state) {
-          final title = state.extra as String;
           return const RestuarentsView();
+        }),
+    GoRoute(
+        path: kTrendingFoodsView,
+        builder: (context, state) {
+          return const TrendingFoods();
+        }),
+    GoRoute(
+        path: kNearByFoodsView,
+        builder: (context, state) {
+          return const NearbyFoodsView();
         }),
   ]);
 }

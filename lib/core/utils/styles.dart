@@ -96,6 +96,11 @@ class LightTextStyles {
     fontSize: 9.sp,
     fontWeight: FontWeight.w500,
   );
+  static TextStyle kGray8w400 = TextStyle(
+    color: kGray,
+    fontSize: 8.sp,
+    fontWeight: FontWeight.w400,
+  );
   static TextStyle kGray9w400 = TextStyle(
     color: kGray,
     fontSize: 9.sp,
