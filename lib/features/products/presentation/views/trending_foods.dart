@@ -3,7 +3,6 @@ import 'package:foodly/core/utils/assets.dart';
 import 'package:foodly/core/utils/constants/constants.dart';
 import 'package:foodly/core/utils/styles.dart';
 import 'package:foodly/core/widgets/background_container.dart';
-import 'package:foodly/features/products/presentation/widgets/nearby_restuarants_listview.dart';
 import 'package:foodly/features/products/presentation/widgets/trending_foods_listview.dart';
 
 class TrendingFoods extends StatelessWidget {
