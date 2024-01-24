@@ -11,12 +11,13 @@ class RestuarentsView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: kSecondary,
       appBar: AppBar(
         elevation: 0.3,
-        backgroundColor: kOffWhite,
+        backgroundColor: kSecondary,
         title: Text(
-          "Nearby Restaurants",
-          style: LightTextStyles.kGrey13w600,
+          "Nearby Restuarants",
+          style: LightTextStyles.kLightWhite13w600,
         ),
       ),
       body: const BackgroundContainer(

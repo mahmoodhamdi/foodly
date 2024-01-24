@@ -41,6 +41,11 @@ class LightTextStyles {
     fontSize: 13.sp,
     fontWeight: FontWeight.w600,
   );
+  static TextStyle kLightWhite13w600 = TextStyle(
+    color: kLightWhite,
+    fontSize: 13.sp,
+    fontWeight: FontWeight.w600,
+  );
   static TextStyle kGrey12w600 = TextStyle(
     color: kGray,
     fontSize: 12.sp,

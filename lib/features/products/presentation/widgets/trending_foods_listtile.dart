@@ -84,6 +84,7 @@ class TrendingFoodsListTile extends StatelessWidget {
                               width: kWidth * 0.7,
                               height: 15.h,
                               child: ListView.builder(
+                                physics: const BouncingScrollPhysics(),
                                 itemCount: foodModel.additives.length,
                                 scrollDirection: Axis.horizontal,
                                 itemBuilder: (context, index) {

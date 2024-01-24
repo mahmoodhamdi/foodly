@@ -4,13 +4,11 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:foodly/core/utils/constants/constants.dart';
 import 'package:foodly/core/utils/styles.dart';
 import 'package:foodly/features/products/data/models/foods_model.dart';
+import 'package:foodly/features/products/presentation/widgets/add_to_cart_button.dart';
 
 class NearbyFoodsListTile extends StatelessWidget {
   const NearbyFoodsListTile(
-      {super.key,
-      this.onTap,
-      required this.foodModel,
-      required this.index});
+      {super.key, this.onTap, required this.foodModel, required this.index});
   final void Function()? onTap;
   final FoodModel foodModel;
   final int index;
@@ -84,10 +82,31 @@ class NearbyFoodsListTile extends StatelessWidget {
                             ),
                             SizedBox(
                               width: kWidth * 0.7,
-                              child: Text(
-                                foodModel.restaurant,
-                                style: LightTextStyles.kGray9w400,
-                                overflow: TextOverflow.ellipsis,
+                              height: 15.h,
+                              child: ListView.builder(
+                                physics: const BouncingScrollPhysics(),
+                                itemCount: foodModel.additives.length,
+                                scrollDirection: Axis.horizontal,
+                                itemBuilder: (context, index) {
+                                  return Container(
+                                    margin: EdgeInsets.only(right: 5.w),
+                                    decoration: BoxDecoration(
+                                      color: kSecondaryLight,
+                                      borderRadius: BorderRadius.all(
+                                        Radius.circular(9.r),
+                                      ),
+                                    ),
+                                    child: Center(
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(2.0),
+                                        child: Text(
+                                          foodModel.additives[index]["title"],
+                                          style: LightTextStyles.kGray8w400,
+                                        ),
+                                      ),
+                                    ),
+                                  );
+                                },
                               ),
                             ),
                           ]),
@@ -101,15 +120,19 @@ class NearbyFoodsListTile extends StatelessWidget {
                     width: 60.w,
                     height: 19.h,
                     decoration: BoxDecoration(
-                      color:
-                          foodModel.isAvailable ? kPrimary : kSecondaryLight,
+                      color: foodModel.isAvailable ? kPrimary : kSecondaryLight,
                       borderRadius: BorderRadius.all(Radius.circular(10.r)),
                     ),
                     child: Center(
                         child: Text(
-                      foodModel.isAvailable ? "Open" : "Closed",
+                      "\$ ${foodModel.price.toStringAsFixed(2)}",
                       style: LightTextStyles.kLightWhite12w600,
-                    ))))
+                    )))),
+            Positioned(
+              right: 75.w,
+              top: 6.h,
+              child: const AddToCartButton(),
+            ),
           ],
         ));
   }

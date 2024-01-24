@@ -14,7 +14,7 @@ class PageViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kPrimary,
+      backgroundColor: kLightWhite,
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(130.h),
         child: SizedBox(

@@ -11,12 +11,13 @@ class NearbyFoodsView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: kSecondary,
       appBar: AppBar(
         elevation: 0.3,
-        backgroundColor: kOffWhite,
+        backgroundColor: kSecondary,
         title: Text(
           "Nearby Foods",
-          style: LightTextStyles.kGrey13w600,
+          style: LightTextStyles.kLightWhite13w600,
         ),
       ),
       body: const BackgroundContainer(
