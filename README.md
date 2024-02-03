@@ -1,39 +1,66 @@
 # foodly
  [![wakatime](https://wakatime.com/badge/user/018c9017-daf8-45c1-be71-8b16fd238022/project/018d1452-a97c-4f22-908a-407a524d2bfe.svg)](https://wakatime.com/badge/user/018c9017-daf8-45c1-be71-8b16fd238022/project/018d1452-a97c-4f22-908a-407a524d2bfe)
+# FOODLY
 
-User Registration and Authentication
-• User login and authentication.
-• Users can register and create an account.
-• Email and phone number verification for account security.
+## User Registration and Authentication
 
-User Location Services
-• Detection of the user’s current location.
-• Utilization of multiple map APIs to accurately determine user coordinates.
+- **User login and authentication:** 
+  - Provide a secure login mechanism for users.
+  - Utilize strong password policies and encryption.
 
-Restaurant and Food Discovery
-• Dynamic food and restaurant recommendations based on the user’s location.
-• Ability for users to explore different food categories.
-• Display of restaurants within a certain delivery radius.
+- **User registration:**
+  - Allow users to register and create an account.
+  - Implement email and phone number verification for enhanced account security.
 
-No-Result Recommendations
-• Suggest random foods to users when no nearby options are found.
+## User Location Services
 
-Ordering and Delivery Functionality
-• Users can place orders from nearby restaurants.
-• Calculation of delivery distance from the restaurant to the user’s location.
-• Estimation of delivery time for the order.
-• Calculation of delivery price based on distance.
+- **User's Current Location:**
+  - Implement location services to detect the user's current coordinates.
+  - Utilize multiple map APIs for accurate location determination.
 
-Navigation and Maps Integration
-• Navigation feature to guide users from their current location to the restaurant’s location.
+## Restaurant and Food Discovery
 
-Payment System
-• Secure payment processing for orders.
-• Handling transactions between clients and the admin.
+- **Dynamic Recommendations:**
+  - Provide dynamic food and restaurant recommendations based on the user's location.
+  - Explore different food categories for users to discover.
 
-Rating and Feedback
-• Users can rate their experience, the food quality, the restaurant, and the delivery service.
+- **Delivery Radius:**
+  - Display restaurants within a specified delivery radius from the user's location.
 
-Security and Data Protection
-• Ensuring data privacy and security for user information.
-• Secure handling of payment information and transaction details.
+- **No-Result Recommendations:**
+  - Suggest random foods to users when no nearby options are found.
+
+## Ordering and Delivery Functionality
+
+- **Placing Orders:**
+  - Allow users to place orders from nearby restaurants.
+
+- **Delivery Distance and Time:**
+  - Calculate delivery distance from the restaurant to the user's location.
+  - Provide an estimation of delivery time for the order.
+
+- **Delivery Price Calculation:**
+  - Calculate delivery price based on the distance.
+
+## Navigation and Maps Integration
+
+- **Navigation Feature:**
+  - Implement a navigation feature to guide users from their current location to the restaurant’s location.
+
+## Payment System
+
+- **Secure Payment Processing:**
+  - Implement a secure payment system for processing orders.
+  - Ensure secure handling of payment information and transaction details.
+
+## Rating and Feedback
+
+- **User Feedback:**
+  - Allow users to rate their overall experience, food quality, restaurant, and delivery service.
+
+## Security and Data Protection
+
+- **Data Privacy:**
+  - Ensure data privacy and security for user information.
+  - Implement secure handling of payment information and transaction details.
+
